@@ -56,7 +56,7 @@ export default function Form() {
       .then(res => {
         setPost(res.data); 
         
-        
+
         setFormState({
           name: "",
           pizzasize: "",
@@ -172,15 +172,6 @@ export default function Form() {
         />
         </label><br />
 
-        {/* <label htmlFor="terms" className="terms">
-        <input
-          type="checkbox"
-          name="terms"
-          checked={formState.terms}
-          onChange={inputChange}
-        />
-        Terms & Conditions
-      </label> */}
 
         <label htmlFor="ham">
           Ham
@@ -210,9 +201,6 @@ export default function Form() {
           value={formState.instructions}
           onChange={inputChange}
         />
-        {/* {errors.instructions.length > 0 ? (
-          <p className="error">{errors.instructions}</p>
-        ) : null} */}
       </label>
 
 
@@ -235,21 +223,6 @@ export default function Form() {
 
 
 
-      {/* <label htmlFor="email">
-        Email
-        <input
-          type="text"
-          name="email"
-          value={formState.email}
-          onChange={inputChange}
-        />
-        {errors.email.length > 0 ? (
-          <p className="error">{errors.email}</p>
-        ) : null}
-      </label>
-
-
-      displaying our post request data */}
       <pre>{JSON.stringify(post, null, 2)}</pre>
       <button disabled={buttonDisabled}>Submit</button>
     </form>
