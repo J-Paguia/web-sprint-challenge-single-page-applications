@@ -36,3 +36,28 @@
     transform: rotate(360deg);
   }
 }
+
+
+nav{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  min-height: 10vh;
+  background: red;
+  color: white;
+   
+}
+
+
+.nav-links {
+  width: 50%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  list-style: none;
+}
+
+.home-header {
+  text-align: center;
+  
+}
